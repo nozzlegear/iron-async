@@ -1,0 +1,38 @@
+{
+    "name": "iron-async",
+    "version": "1.0.0",
+    "description": "An async wrapper for the Iron encryption package.",
+    "main": "bin/index.js",
+    "typings": "bin/index.d.ts",
+    "scripts": {
+        "build": "rimraf ./bin && tsc",
+        "test": "npm run build && alsatian -T ./bin/tests/harness.js | tap-bark",
+        "prepublish": "npm run test"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/nozzlegear/iron-async.git"
+    },
+    "keywords": [
+        "iron",
+        "async",
+        "encryption"
+    ],
+    "author": "Joshua Harms <joshua@nozzlegear.com>",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/nozzlegear/iron-async/issues"
+    },
+    "homepage": "https://github.com/nozzlegear/iron-async#readme",
+    "dependencies": {
+        "bluebird": "^3.4.7",
+        "iron": "^4.0.4"
+    },
+    "devDependencies": {
+        "@types/bluebird": "^3.0.37",
+        "alsatian": "^1.2.1",
+        "rimraf": "^2.6.0",
+        "tap-bark": "^1.0.0",
+        "typescript": "^2.1.6"
+    }
+}
