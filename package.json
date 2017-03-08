@@ -1,6 +1,6 @@
 {
   "name": "iron-async",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "An async wrapper for the Iron encryption package.",
   "main": "bin/index.js",
   "typings": "bin/index.d.ts",
