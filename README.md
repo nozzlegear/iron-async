@@ -31,20 +31,20 @@ const IronAsync = require("iron-async");
 
 ## Examples
 
-**sealAsync(value: any, password: string, defaults?)**
+**seal(value: any, password: string, defaults?)**
 
 ```js
-import { sealAsync } from "iron-async";
+import { seal } from "iron-async";
 
-const sealedToken: string = await sealAsync({
+const sealedToken: string = await seal({
     hello: "world"
 }, password);
 ```
 
-**unsealAsync(token: string, password: string, defaults?)**
+**unseal(token: string, password: string, defaults?)**
 
 ```js
-import { unsealAsync } from "iron-async";
+import { unseal } from "iron-async";
 
-const unsealedObject = await sealAsync(sealedToken, password);
+const unsealedObject = await unseal(sealedToken, password);
 ```
